@@ -1,6 +1,6 @@
 # cities
 
-This is a collection of `.poly` files for cities. The ultimate goal is to have them all, but it's a rough process right now (as explained below)...
+This is a collection of `.poly` files for cities, with the definition of 'city' being the area one level under the state level. The ultimate goal is to have them all, but it's a rough process right now (as explained below)...
 
 These `.poly` files are used to then extract just the city's OSM file from a greater region's OSM file. For example, creating an exact OSM file for Boston from the North America OSM file.
 
@@ -30,10 +30,12 @@ Sometimes there won't be a Relation ID for a city, or the Relation that exists w
 
 ### How To Use The Poly File
 
+You can use the `.poly` file to extract that region from a greater region's OSM file.
+
 * Install [Osmosis](http://wiki.openstreetmap.org/wiki/Osmosis)
     * If you're on a Mac, I suggest you use [Homebrew](http://mxcl.github.io/homebrew/) to install it with `brew intsall osmosis`
-* Download the OSM file for the region that the city is in from [http://download.geofabrik.de/](http://download.geofabrik.de/)
-* Run this to get the city's OSM file out of the state's (country's?) OSM file:
+* Download the `.osm.pbf` file for the region that the city is in from [http://download.geofabrik.de/](http://download.geofabrik.de/)
+* Run this to extract the city's OSM file out of the greater region's OSM file:
 `osmosis --read-pbf-fast file="YOUR-REGION-latest.osm.pbf" --bounding-polygon file="CITY-NAME_STATE.poly" --write-xml file="CITY-NAME_STATE.osm"`
 For example:
 `osmosis --read-pbf-fast file="north-america-latest.osm.pbf" --bounding-polygon file="holyoke_ma.poly" --write-xml file="holyoke_ma.osm"`
