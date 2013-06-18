@@ -12,18 +12,26 @@ Sometimes there won't be a Relation ID for a city, or the Relation that exists w
 * Go to [http://nominatim.openstreetmap.org/](http://nominatim.openstreetmap.org/) and search for the city you'd like added
 
     ![](images/howto1.png)
+
 * Click the 'details' link for that city in the left column
 
     ![](images/howto2.png)
-* Copy the number for 'OSM: relation'
+
+* Make sure that the map on the right displays the full city border
 
     ![](images/howto3.png)
-* Go to [http://osm102.openstreetmap.fr/~jocelyn/polygons/index.py](http://osm102.openstreetmap.fr/~jocelyn/polygons/index.py), paste the number into the form, and click the Submit button
+
+* Copy the number for 'OSM: relation'
 
     ![](images/howto4.png)
-* Click the 'poly' link to open the file in the browser, then use `File -> Save As` to save the file
+
+* Go to [http://osm102.openstreetmap.fr/~jocelyn/polygons/index.py](http://osm102.openstreetmap.fr/~jocelyn/polygons/index.py), paste the number into the form, and click the Submit button
 
     ![](images/howto5.png)
+
+* Click the 'poly' link to open the file in the browser, then use `File -> Save As` to save the file
+
+    ![](images/howto6.png)
 
 * The naming convention I've been using is `city-name_state-abbreviation.poly`. For example, `holyoke_ma.poly`
 
