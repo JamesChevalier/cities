@@ -6,6 +6,8 @@ These `.poly` files are used to then extract just the city's OSM file from a gre
 
 The ultimate goal is to have them all, but it's a rough process right now. The process explained below shows how to retrieve the `.poly` file for a specific city, but the process I've gone through to gather most of the files in this repository is much more automated and uses [Overpass Turbo](http://overpass-turbo.eu/).
 
+I have the OSM file for each of the cities in this repository. If you would like access to those files, [contact me](http://jameschevalier.us/contact).
+
 ### How To Get The Poly File For A Specific City
 
 Sometimes a city won't have a Relation ID, or the Relation that exists will be broken. For those instances, the final OSM file can be created manually by tracing the city at [http://extract.bbbike.org/](http://extract.bbbike.org/). Just make sure to select one of the 'OSM XML' formats in the top pulldown menu there.
@@ -47,3 +49,5 @@ You can use the `.poly` file to extract that region from a greater region's OSM 
 `osmosis --read-pbf-fast file="YOUR-REGION-latest.osm.pbf" --bounding-polygon file="CITY-NAME_STATE.poly" --write-xml file="CITY-NAME_STATE.osm"`
 For example:
 `osmosis --read-pbf-fast file="north-america-latest.osm.pbf" --bounding-polygon file="holyoke_ma.poly" --write-xml file="holyoke_ma.osm"`
+
+I have the OSM file for each of the cities in this repository. If you would like access to those files, [contact me](http://jameschevalier.us/contact).
