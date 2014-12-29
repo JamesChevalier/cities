@@ -28,7 +28,7 @@ Sometimes a city won't have a Relation ID, or the Relation that exists will be b
 
     ![](images/howto4.png)
 
-* Go to [http://osm102.openstreetmap.fr/~jocelyn/polygons/index.py](http://osm102.openstreetmap.fr/~jocelyn/polygons/index.py), paste the number into the form, and click the Submit button
+* Go to [http://polygons.openstreetmap.fr/](http://polygons.openstreetmap.fr/), paste the number into the form, and click the Submit button
 
     ![](images/howto5.png)
 
