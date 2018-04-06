@@ -47,5 +47,3 @@ You can use the `.poly` file to extract that region from a greater region's OSM 
 `osmosis --read-pbf-fast file="YOUR-REGION-latest.osm.pbf" --bounding-polygon file="CITY-NAME_STATE.poly" --write-xml file="CITY-NAME_STATE.osm"`
 For example:
 `osmosis --read-pbf-fast file="north-america-latest.osm.pbf" --bounding-polygon file="holyoke_ma.poly" --write-xml file="holyoke_ma.osm"`
-
-I have the OSM file for each of the cities in this repository. If you would like access to those files, [contact me](http://jameschevalier.us/contact).
